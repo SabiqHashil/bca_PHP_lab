@@ -1,0 +1,40 @@
+<!--
+    1 - Aim:
+    Write a JavaScript program to check whether a given number is perfect, abundant or deficient.
+    Use alert box to display the output.
+-->
+
+<html>
+
+<head>
+    <title>1. Aim</title>
+</head>
+
+<body>
+    <h2>Enter the Number to Check Perfect, Abundant & Deficient</h2>
+    <form name="form1">
+        <input type="text" name="value1" size="10">
+        <input type="button" value="Calculate" onclick="check();">
+    </form>
+
+    <script lang="JavaScript">
+        function check() {
+            var num = document.form1.value1.value;
+            var i, sum = 0;
+
+            for (i = 1; i < num; i++) {
+                if (num % i == 0)
+                    sum = sum + i;
+            }
+
+            if (sum == num)
+                alert("Perfect Number");
+            else if (sum > num)
+                alert("Abundant Number");
+            else
+                alert("Deficient Number");
+        }
+    </script>
+</body>
+
+</html>

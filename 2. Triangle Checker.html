@@ -1,0 +1,44 @@
+<!-- 
+    2 - Aim:
+    Write a JavaScript program to check whether the given sides can form a triangle. if Yes, find the type (isosceles,
+    equilateral and scalene) and area of the triangle. Use prompt dialogue box to accept the sides.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Triangle Checker</title>
+    <script>
+        function checkTriangle() {
+            const sideA = parseInt(prompt("Enter the length of side A:"));
+            const sideB = parseInt(prompt("Enter the length of side B:"));
+            const sideC = parseInt(prompt("Enter the length of side C:"));
+
+            if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+                let triangleType;
+                if (sideA === sideB && sideB === sideC) {
+                    triangleType = "Equilateral";
+                } else if (sideA === sideB || sideA === sideC || sideB === sideC) {
+                    triangleType = "Isosceles";
+                } else {
+                    triangleType = "Scalene";
+                }
+
+                const semiPerimeter = (sideA + sideB + sideC) / 2;
+                const area = Math.sqrt(semiPerimeter * (semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC));
+
+                alert(`The given sides form a ${triangleType} triangle.\nArea: ${area}`);
+            } else {
+                alert("The given sides cannot form a triangle.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Triangle Checker</h1>
+    <button onclick="checkTriangle()">Check Triangle</button>
+</body>
+
+</html>

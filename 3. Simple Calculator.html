@@ -1,0 +1,57 @@
+<!-- 
+    3 - Aim:
+    Design a form that accepts two integers. Provide 4 buttons for Add, Subtract, Multiply, Divide. Add JavaScript program to add, 
+    subtract, multiply and divide the given numbers when these buttons are clicked. Use output element to display the results. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+    <script>
+        function calculate(op) {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var result;
+
+            if (op === "add")
+                result = num1 + num2;
+            else if (op === "sub")
+                result = num1 - num2;
+            else if (op === "mul")
+                result = num1 * num2;
+            else if (op === "divi")
+                result = num1 / num2;
+
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+
+    <form>
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" name="num1" required>
+
+        <br><br>
+
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" name="num2" required>
+
+        <br><br>
+
+        <button type="button" onclick="calculate('add')">Addition</button>
+        <button type="button" onclick="calculate('sub')">Subtraction</button>
+        <button type="button" onclick="calculate('mul')">Multiplication</button>
+        <button type="button" onclick="calculate('divi')">Division</button>
+
+        <br><br>
+
+        <output id="result"/>
+    </form>
+</body>
+
+</html>
