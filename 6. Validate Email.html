@@ -1,0 +1,45 @@
+<!-- 
+    6 - Aim:
+    Write a JavaScript program to validate email based on the following condition
+        * Mail id must contain the @ and . character
+        * There must be at least one character before and after the @.
+        * There must be at least two characters after .(dot).
+
+        KPS
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" placeholder="Enter your email address">
+        <button onclick="validateEmail()">Validate</button>
+        <p id="result"></p>
+    </div>
+
+
+    <script>
+        function validateEmail() {
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value.trim();
+
+            // Regular expression for email validation
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if (emailPattern.test(email)) {
+                document.getElementById('result').textContent = 'Email is valid';
+                document.getElementById('result').style.color = 'green';
+            } else {
+                document.getElementById('result').textContent = 'Invalid email';
+                document.getElementById('result').style.color = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

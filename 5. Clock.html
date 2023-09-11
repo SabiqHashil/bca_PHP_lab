@@ -1,0 +1,33 @@
+<!-- 
+    5 - Aim:
+    Write a JavaScript program to create clock with a timing event.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Digital Clock</title>
+</head>
+<body>
+    <h1 id="clock" style="text-align: center;">00:00:00</h1>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            
+            document.getElementById('clock').textContent = timeString;
+        }
+        
+        // Update the clock every second (1000 milliseconds)
+        setInterval(updateClock, 1000);
+        
+        // Initial call to set the clock without delay
+        updateClock();
+    </script>
+</body>
+</html>
