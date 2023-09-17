@@ -1,0 +1,37 @@
+<!--
+    8 - Aim:
+    Write a JavaScript Program to create an Array and read values using Prompt popup box and display the sum of elements in an Alert Box.
+-->
+
+<!DOCTYPE html>
+<head>
+    <title>Array Sum Calculator</title>
+</head>
+
+<body>
+    <div>
+        <h1>Array Sum Calculator</h1>
+        <button onclick="calculateSum()">Calculate Sum</button>
+    </div>
+
+
+    <script>
+        function calculateSum() {
+            const userArray = [];
+            let userInput;
+
+            do {
+                userInput = prompt("Enter an element (or type 'done' to finish):");
+                if (userInput !== "done") {
+                    userArray.push(parseFloat(userInput));
+                }
+            } while (userInput !== "done");
+
+            const sum = userArray.reduce((acc, currentValue) => acc + currentValue, 0);
+
+            alert(`The sum of elements in the array is: ${sum}`);
+        }
+    </script>
+</body>
+
+</html>
