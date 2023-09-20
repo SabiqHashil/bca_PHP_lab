@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Capital Display</title>
+</head>
+<body>
+    <h1>Select a Country:</h1>
+    <select id="countrySelect" onchange="displayCapital()">
+        <option value="none">Select a Country</option>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <!-- Add more countries and values as needed -->
+    </select>
+
+    <h2>Capital:</h2>
+    <input type="text" id="capitalDisplay" readonly>
+
+    <script>
+        const countryCapitals = {
+            usa: "Washington, D.C.",
+            canada: "Ottawa",
+            uk: "London",
+            // Add more country-capital mappings here
+        };
+
+        function displayCapital() {
+            const selectedCountry = document.getElementById("countrySelect").value;
+            const capitalDisplay = document.getElementById("capitalDisplay");
+            capitalDisplay.value = countryCapitals[selectedCountry] || "Capital not found";
+        }
+    </script>
+</body>
+</html>
