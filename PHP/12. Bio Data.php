@@ -32,7 +32,7 @@
 
 <?php
 if ($_POST) {
-    echo "<h1>Biodata</h1>";
+    echo "<h1>Bio Data</h1> ";
     echo "Name: " . $_POST["name1"] . "<br>";
     echo "Address: " . $_POST["address1"] . "<br>";
     echo "Age: " . $_POST["age1"] . "<br>";
