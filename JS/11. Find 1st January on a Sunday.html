@@ -3,6 +3,43 @@
     Write a JavaScript program to find 1st January be a Sunday between a range of years.
 -->
 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find 1st January on a Sunday</title>
+</head>
+
+<body>
+    <script type="text/JavaScript">
+        function firstSunday(){
+            year1=prompt("Enter the starting year.", "year1");
+            year2=prompt("Enter the last limit.", "year2");
+            for(var year=year1; year<=year2; year++){
+                var d=new Date(year, 0, 1);
+                if(d.getDay()===0)
+                    document.write('<br> The first day of '+ year +' is a sunday.');
+            }
+        }
+        firstSunday();
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,4 +72,4 @@
         }
     </script>
 </body>
-</html>
+</html> -->
