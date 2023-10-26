@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <form action="" method="POST">
+        <form method="POST">
             <table border="0">
                 <tr>
                     <td>Employee Name</td>
