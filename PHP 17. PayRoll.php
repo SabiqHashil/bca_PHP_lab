@@ -10,35 +10,27 @@
     </head>
 
     <body style="text-align: center;">
-        <form method="POST">
-            <table border="0">
-                <tr>
-                    <td>Employee Name</td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-
-                <tr>
-                    <td>Designation</td>
-                    <td><select name="desig">
+    <h1>Pay Slip Generator</h1>
+        <form action="" method="POST">
+           
+                    Employee Name:
+                    <input type="text" name="name">
+                <br>
+                    Designation: 
+                    <select name="desig">
                             <option>(Please Select)</option>
                             <option>Manager</option>
                             <option>Supervisor</option>
                             <option>Clerk</option>
                             <option>Peon</option>
-                        </select></td>
-                    </tr>
-
-                <tr>
-                    <td>Basic Salary</td>
-                    <td><input type="text" name="salary"></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Submit"></td>
-                </tr>
-            </table>
+                        </select>
+                <br>
+                    Basic Salary:
+                    <input type="text" name="salary">
+                <br>
+                    <input type="submit" value="Submit">
         </form>
+        <br><br>
     </body>
 </html>
 
