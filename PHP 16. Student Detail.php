@@ -9,7 +9,7 @@
 <head>
     <title>Student Details</title>
 </head>
-<body>
+<body style="text-align: center;">
     <h1>Student Details</h1>
     <form method="POST">
         Reg Number: <input type="text" name="reg">

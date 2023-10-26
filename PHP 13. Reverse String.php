@@ -9,7 +9,7 @@
     <title>Reverse a String</title>
 </head>
 
-<body>
+<body style="text-align: center;">
     <h2>Enter a string to reverse:</h2>
     <form action="" method="POST">
         <input type="text" name="str1">

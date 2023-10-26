@@ -4,7 +4,7 @@
 -->
 
 <html>
-    <body>
+    <body style="text-align: center;">
         <form action="" method="POST">
             Username: <input type="text" name="usr"> <br> <br>
             Password: <input type="password" name="pass"> <br> <br> <br>

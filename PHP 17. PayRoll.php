@@ -9,7 +9,7 @@
         <title>Payroll Page</title>
     </head>
 
-    <body>
+    <body style="text-align: center;">
         <form method="POST">
             <table border="0">
                 <tr>

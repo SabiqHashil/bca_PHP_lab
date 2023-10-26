@@ -9,7 +9,7 @@
     <title>Check Perfect, Abundant & Deficient</title>
 </head>
 
-<body>
+<body style="text-align: center;">
 
     <h2>Enter the number to check if it's perfect, abundant or deficient:</h2>
 
