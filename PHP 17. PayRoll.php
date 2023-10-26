@@ -1,6 +1,7 @@
 <!--
     17 - Aim:
-    Write a PHP application to generate the pay slip of an employee by accepting name, basic salary and designation. The new salary will be calculated based on the following conditions.
+    Write a PHP application to generate the pay slip of an employee by accepting name, basic salary and designation.
+    The new salary will be calculated based on the following conditions.
     eg: (figure in questions photo)
 -->
 
