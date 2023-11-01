@@ -40,7 +40,7 @@
 			echo "<tr><th>Item Code</th><th>Item Name</th><th>Unit Price</th></tr>";
             while($row = pg_fetch_row($result1)) {
                 echo "<br>\n";
-                echo "<tr><td>Item No: $row[0] </td><td> Item Name: $row[1] </td><td> Unit Price: $row[2] </td></tr>";
+                echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
             }
         }
     }
