@@ -24,24 +24,24 @@
 
 <?php
 
-    if($_POST) {
-        $no = $_POST['code'];
-        $name = $_POST['name'];
-        $price = $_POST['price'];
-        $con = mysqli_connect('localhost', 'sabiq', '123', 'college');
-        if($con) {
-            echo "Successfully connected!";
-            $qry = "insert into product values ('$no', '$name', '$price')";
-            $result = mysqli_query($con, $qry);
-            $qry1 = "select * from product";
-            $result1 = mysqli_query($con,$qry1);
-			echo "<table border=1>";
-			echo "<tr><th>Item Code</th><th>Item Name</th><th>Unit Price</th></tr>";
-            while($row = mysqli_fetch_row($result1)) {
-                echo "<br>\n";
-                echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
-            }
+if ($_POST) {
+    $no = $_POST['code'];
+    $name = $_POST['name'];
+    $price = $_POST['price'];
+    $con = mysqli_connect('localhost', 'sabiq', '123', 'college');
+    if ($con) {
+        echo "Successfully connected!";
+        $qry = "insert into product values ('$no', '$name', '$price')";
+        $result = mysqli_query($con, $qry);
+        $qry1 = "select * from product";
+        $result1 = mysqli_query($con, $qry1);
+        echo "<table border=1>";
+        echo "<tr><th>Item Code</th><th>Item Name</th><th>Unit Price</th></tr>";
+        while ($row = mysqli_fetch_row($result1)) {
+            echo "<br>\n";
+            echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
         }
     }
+}
 
 ?>
