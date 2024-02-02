@@ -4,7 +4,6 @@
 -->
 
 <html>
-
 <head>
     <title>Check Perfect, Abundant & Deficient</title>
 </head>
@@ -18,7 +17,6 @@
         <input type="submit">
     </form>
 </body>
-
 </html>
 
 <?php

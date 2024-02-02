@@ -17,8 +17,7 @@
 if ($_POST) {
     $usr = $_POST['usr'];
     $paswd = $_POST['pass'];
-    $con = mysqli_connect("'localhost', 'college', 'postgress', '123'");
-
+    $con = mysqli_connect('localhost', 'sabiq', '123', 'college'); 
     if ($con) {
         echo "Successfully Connected.";
         $qry = "select username, password from login where username = '$usr' and password='$paswd'";

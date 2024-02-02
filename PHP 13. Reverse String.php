@@ -4,7 +4,6 @@
 -->
 
 <html>
-
 <head>
     <title>Reverse a String</title>
 </head>
@@ -16,7 +15,6 @@
         <input type="submit">
     </form>
 </body>
-
 </html>
 
 <?php

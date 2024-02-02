@@ -4,7 +4,6 @@
 -->
 
 <html>
-
 <head>
     <title>Bio Data</title>
 </head>
@@ -14,20 +13,25 @@
         <h1>Bio Data</h1>
         <label for="name1">Name:</label> <br>
         <input type="text" name="name1"> <br> <br>
+
         <label for="address1">Address:</label> <br>
         <textarea name="address1"> </textarea> <br> <br>
+
         <label for="age1">Age:</label> <br>
         <input type="text" name="age1"> <br> <br>
+
         <label for="mobile1">Mobile:</label> <br>
         <input type="text" name="mobile1"> <br> <br>
+
         <label for="email1">Email:</label> <br>
         <input type="text" name="email1"> <br> <br>
+
         <label for="qualification1">Qualification:</label> <br>
         <input type="text" name="qualification1"> <br> <br>
+
         <input type="submit" value="Display"> <br>
     </form>
 </body>
-
 </html>
 
 <?php
