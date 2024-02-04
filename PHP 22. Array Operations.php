@@ -3,7 +3,7 @@
     Write a PHP program to create an array and store 10 names in the array. Do the following operations.
     a. Display the contents using for each statement.
     b. Display the array in a sorted order.
-    c. Display the arrau without the diplicate elements.
+    c. Display the array without the diplicate elements.
     d. Remove the last elements and display.
     e. Display the array in reverse order.
     f. Search an element in the given array.
