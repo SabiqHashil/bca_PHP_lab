@@ -4,8 +4,6 @@
     display the selected fruits in a webpage.
 -->
 
-
-
 <!DOCTYPE html>
 <html>
 	<body>
@@ -18,7 +16,8 @@
 				<option value="Apple">Apple
 				<option value="Orange">Orange
 				<option value="Pineapple">Pineapple
-			</select> <br><br>
+			</select> 
+				<br><br>
 			
 			<input type="submit" value="SELECT">
 		</form>
