@@ -4,4 +4,3 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sabiqhashil" alt="sabiqhashil" /> </p>
 
 
-//<p align="left"> <img src="https://komarev.com/ghpvc/?username=sabiqhashil&label=Profile%20views&color=brightgreen&style=plastic" alt="sabiqhashil" /> </p>
